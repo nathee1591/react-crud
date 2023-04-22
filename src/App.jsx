@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from './Navbar'
 import Users from "./Users";
-import UserCreate from "./Usercreate";
 import UserUpdate from "./UserUpdate";
+import Usercreate from "./components/Usercreate"
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
       <Navbar />
       <Routes>
           <Route path='/' element={<Users />} />
-          <Route path='/create' element={<UserCreate />} />
+          {/* <Route path='/create' element={<UserCreate />} /> */}
           <Route path='/update/:id' element={<UserUpdate />} />
         </Routes>
     </div>
